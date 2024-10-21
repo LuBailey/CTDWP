@@ -1,10 +1,5 @@
 export default class InvalidPurchaseException extends Error {
-    /**
-     * Constructs a new InvalidPurchaseException.
-     * @param {string} message - The error message describing why the purchase is invalid.
-     * @param {object} [details] - Optional details about the invalid purchase (e.g., invalid input data).
-     * @param {string} [errorCode] - Optional error code for categorizing the specific type of invalid purchase.
-     */
+
     constructor(message, details = {}, errorCode = 'INVALID_PURCHASE') {
       
       super(message);
